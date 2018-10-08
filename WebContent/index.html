@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>ARS</title>
+</head>
+<body>
+	
+	<nav>
+		<div class="nav-wrapper teal lighten-2">
+			<a href="" class="brand-logo left"><img src="resources/ars_logo.png" height="65" width="65"></a>
+			<ul id="nav-mobile" class="right">
+       			<li><a class="waves-effect btn white teal-text text-lighten-2 modal-trigger" 
+       				href="apk/ars.apk">Download APK</a></li>
+     		</ul>
+		</div>
+	</nav>
+	<br>
+	<section>
+		<div class ="container">
+			<h4 class="center-align">Welcome to ARS</h4>
+           	<h5 class="center-align">Let me know your lesson reference to start monitoring</h5>
+           	<div class="center-align" >
+            	<form autocomplete="off" id="checkRefForm" onsubmit="return formSubmit();">
+            	<div class="row" style="padding:20px">
+            		<div class="col s5 right-align"></div>
+            		<div class="input-field col s2">
+          				<input required type="text" id="ref" maxlength="4" size="4">
+          				<label id="reflabel" for="ref">Reference</label>
+        			</div>
+        			<div class="col s5 left-align"></div>
+            	</div>	
+            	</form>
+			</div>
+			<div class="row center-align" onclick=formSubmit()>
+           		<div class="s12 btn waves-effect waves-light modal-trigger">
+           			<span class="white-text">Send</span>
+				</div>
+            </div>
+          </div>		
+	</section>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
