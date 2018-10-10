@@ -1,0 +1,1 @@
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT --session-timeout -1 target/*.war
